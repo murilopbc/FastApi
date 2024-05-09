@@ -10,7 +10,8 @@ Session: AsyncSession = sessionmaker(
     autocommit=False,
     autoflush=False,
     expire_on_commit=False,
-    class=AsyncSession,
+    class_=AsyncSession,
     bind=engine
-
 )
+
+print(type(Session))
