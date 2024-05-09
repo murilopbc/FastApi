@@ -2,6 +2,8 @@ from pydantic.v1 import BaseSettings
 
 from sqlalchemy.orm import declarative_base
 
+# Configurações iniciais
+
 class Settings(BaseSettings):
 
     API_V1_STR: str = '/api/v1'
