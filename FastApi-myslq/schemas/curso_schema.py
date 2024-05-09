@@ -1,5 +1,5 @@
 from typing import Optional
-from sqlalchemy import BaseModel as SchemaBaseModel
+from pydantic import BaseModel as SchemaBaseModel
 
 # Validação dos dados
 
@@ -11,5 +11,4 @@ class CursoSchema(SchemaBaseModel):
     instrutor: str
 
     class Config:
-        orm_mode = True
         from_atributes = True
